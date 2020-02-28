@@ -1,2 +1,90 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ProjectAI</title>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://www.google.com/jsapi"></script>
+  <script>
+   google.load("visualization", "1", {packages:["corechart"]});
+   google.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+     ['уровень знания', 'кол-во человек'],
+     ['Знают прс ИИ немного',     38],
+     ['Не знают об ИИ', 50],
+     ['Хорошо знакомы с этой темой',    3],
+     ['Остальные', 1]
+    ]);
+    var options = {
+     title: 'Результаты опроса    (ИИ - искусственный интеллект)',
+     is3D: true,
+     pieResidueSliceLabel: 'Остальное'
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('air'));
+     chart.draw(data, options);
+   }
+  </script>
+</head>
+<body>
+  <div class="land">
+   
+    <img src="https://s3-alpha-sig.figma.com/img/ed63/4314/74a4da5ae2df665099f4f23135bccfed?Expires=1583712000&Signature=JPW6eS-WakRBmP-iLuv7aj6zSltswFYAJaINszlaahoiwIsPVypRQVeZ07RP3XR4nvvhlAI9gV9MU2s-8cAKnGpYY3nEadW1JMYmhPj4BBcbwCAZnzrPf-RwNH~~2Tfvat~6kC6~s~tTuxNarW2wGSyFtEEyS0QmsmIa8BgcoYHIAXz438~z0Sx5NXH7vwW-Cisaip4~b1zEdFwVKVjTDgewZ5LyNH0QlSxHT2RGmXC2ZWFfXvgd3zGuN-AcO2~PUPQOpikW2Xc4RXBxE2F~RAdmfgpjRHFzPS~N5JJlKJIORu2i7J~ZCgTzqVLqx38QfEhWRVT6U~aIMBp4SToEdQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" class="bgimg1" alt=" "/>
+    <header>
+      <img src="https://img.icons8.com/cotton/64/000000/brain-3.png" class="logo" onclick="slowScroll('#exidland')"/>
+      <div class="glavtext" >Что такое нейронная сеть?</div>
+      <div class="lolpr" id="exidland"></div>
+      <div class="aboutcourse" onclick="slowScroll('#exid1')">о курсе</div> 
+      <div class="aboutsite" onclick="slowScroll('#exid2')">о сайте</div> 
+      <div class="aboutus"  onclick="slowScroll('#exid4')">о нас</div> 
+      <div class="aboutprof"  onclick="slowScroll('#exid3')">профиль</div> 
+      <div class="glavbot" onclick="slowScroll('#exid3')"></div>
+      <div class="textnach">начать</div>
+    </header>
+  </div>
+  
+  <div class="ex1" id="exid2"><div class="textabsm">Сайт</div></div>
+  
+  <div class="ex1"  ><div class="textabcm">Курс "Нейронная сеть"</div></div>
+  
+   <div id="air" style="width: 400px; height: 300px;"></div>
+  
+  <div class="Blocktas"><div class="textabs">Искусственный интеллект (ИИ) позволяет компьютерам обучаться на собственном опыте, адаптироваться к задаваемым параметрам и выполнять те задачи, которые раньше были под силу только человеку. В большинстве случаев реализации ИИ — от компьютерных шахматистов до беспилотных автомобилей — крайне важна возможность глубокого обучения и обработки естественного языка. Благодаря этим технологиям компьютеры можно «научить» выполнять определенные задачи с помощью обработки большого объема данных и выявления в них закономерностей.</div>
+  </div>
+  <div class="Blocktas2"><div class="textabs2">Мы провели исследования и узнали, что большинство опрашиваемых не так хорошо осведомлены о нейронных сетях. 
+    В настоящее время растёт востребованность на специалистов IT-сферы, мы считаем, что наш проект поможет людям заинтересоваться машинным обучением. Из-за этих факторов мы создали сайт, на котором Вы можете найти историю возникновения ИИ, последние разработки в сфере машинного обучения и главное - КУРС ПО СОЗДАНИЮ СОБСТВЕННОЙ НЕЙРОСЕТИ!</div></div>
+ <img src="https://www.kv.by/sites/default/files/pictures/mainimage/2018/08/a34i.432734250.jpg" class="img1" />
+  
+  <div class="mid1"></div>
+  <div class="mid2"></div>
+  <div class="mid3"></div>
+  <div class="mid4"></div>
+  <div class="mid5"></div>
+  <div class="mid6"></div>
+  <div class="mid7" id="exid1"></div>
+  
+  <div class="Blocktac1"><div class="textabc1">Курс включает в себя несколько заданий, после которых Вы сможете запустить собственную нейросеть.</div></div>
+  <div class="img2"><img src="https://neuronus.com/images/news/2017_02/air_artificial-intelligence.jpg" class="img2"/></div>
+  
+  
+  <div class="LogLog" id="exid3"><div class="tekst">Регистрация / Вход</div><div class="pole1"><div class="textp1">Ваше имя</div></div><div class="pole2"><div class="textp2">Ваша эл. почта</div></div><div class="pole3"><div class="textp3">Ваш пароль</div></div><div class="logbot">Дальше</div></div>
+  
+  <div class="bottom1"><div class="mails">Наша электронная почта: faizullinbigdanzix@gmail.com</div></div>
+  <div class="bottom2"><div class="tel">Наши телефоны: +79053108801</div></div>
+  <div class="bottom3"></div>
+  <div class="bottom35"></div>
+  <div class="bottom4" id="exid4"><div class="coninf">Контактная информация</div></div>
+  
+<script type="text/javascript"> 
+     function slowScroll(id) { 
+         var offset = 0;
+         $('html, body').animate({ 
+              scrollTop: $(id).offset().top - offset 
+         }, 1000);
+         return false; 
+     } 
+</script>
+</body>
+</html>
